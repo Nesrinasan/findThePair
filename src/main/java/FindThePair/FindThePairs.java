@@ -104,6 +104,7 @@ public class FindThePairs extends UI implements View {
     public PopupView setWindow(Button btnDevam) {
         popupView = new PopupView ("Devam", btnDevam);
         btnDevam.addClickListener (new Button.ClickListener () {
+
             @Override
             public void buttonClick(Button.ClickEvent clickEvent) {
                 oyunSeviyesi = 2L;
