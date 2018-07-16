@@ -174,12 +174,14 @@ public class GameService extends Application {
     private void controlOfWin(List<Button> buttonList) {
         boolean allMatch = buttonList.stream ()
                 .allMatch (button -> button.getCaption () != null && button.getCaption ().equals ("X"));
-//        if (allMatch) {
+        if (allMatch) {
+            Notification.show ("You Win", Notification.TYPE_HUMANIZED_MESSAGE);
+
 //            FindThePairs findThePair = new FindThePairs ();
 //            findThePair.setOyunSeviyesi (2L);
 //            findThePair.inits ();
 //
-//        }
+        }
     }
 
     public void compareButtons(List<Button> buttonList) throws InterruptedException {
