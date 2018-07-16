@@ -89,7 +89,6 @@ public class FindThePairs extends UI implements View {
             gameService.putButtonsOnBoard (buttonList, horizontalLayoutList, layout2Level);
             gameService.startGame (buttonList);
             mainLayout.addComponent (layout2Level);
-
         }
     }
 
